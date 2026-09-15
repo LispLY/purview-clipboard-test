@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>复制对照测试 · Clipboard Test</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body><main><div class="eyebrow">Edge iOS · Clipboard Test</div>
+<h1>同一份文字，<br>三种复制来源。</h1>
+<p class="intro">在 Edge 工作 profile 中打开。每页只放一种样本，使用 iOS 系统菜单“复制”，然后粘贴到同一工作账号的受管 Outlook 草稿。</p>
+<section class="card"><h2>先测 A，再测 B、C</h2>
+<ol class="steps"><li>先复制普通文本，确认能粘贴。</li><li>再复制测试标记，记录 Checking 后的提示，以及新文字是否真的粘贴成功。</li><li>记录页面编号与测试时间，用相同账号、接收端和系统复制方式比较。</li></ol>
+<p class="hint">预期取决于已部署且已生效的测试策略：普通文本允许，测试标记阻止。若阻止后还能粘贴，请核对是否只是旧剪贴板内容。</p></section><section class="card">
+<div class="card-number">A / p</div>
+<h2>普通网页正文</h2><p class="intro">不可编辑的段落，先用这一组建立对照。</p>
+<div class="links"><a class="choice" href="plain/negative.html">A1 普通文本</a><a class="choice positive" href="plain/positive.html">A2 测试标记</a></div>
+</section><section class="card">
+<div class="card-number">B / textarea</div>
+<h2>纯文本编辑框</h2><p class="intro">原生 textarea，比较编辑框的复制行为。</p>
+<div class="links"><a class="choice" href="textarea/negative.html">B1 普通文本</a><a class="choice positive" href="textarea/positive.html">B2 测试标记</a></div>
+</section><section class="card">
+<div class="card-number">C / div contenteditable</div>
+<h2>富文本编辑区</h2><p class="intro">原生 contenteditable，便于与网页版 Notepad 对照。</p>
+<div class="links"><a class="choice" href="editable/negative.html">C1 普通文本</a><a class="choice positive" href="editable/positive.html">C2 测试标记</a></div>
+</section>
+<footer>合成文本 · 无 JavaScript、剪贴板按钮、统计或外部资源<br>仅用于复制行为对照；网页本身不会判断策略是否生效。</footer>
+</main></body></html>
